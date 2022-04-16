@@ -18,7 +18,7 @@ const lettuce = document.querySelector('#lettuce');
 const tomato = document.querySelector('#tomato');
 const mayo = document.querySelector('#mayo');
 
-const sandwichSubmit = document.querySelector('#sandwich-submit');
+const sandwichSubmit = document.querySelector('#submit');
 
 sandwichSubmit.addEventListener('click', function (event) {
     event.preventDefault();
@@ -27,7 +27,7 @@ sandwichSubmit.addEventListener('click', function (event) {
     'Your sandwich contains: '
 
     if (wholeWheat.checked) {
-        str += 'whole wheat, ';
+        str += 'wheat bread, ';
     }
     if (whiteBread.checked) {
         str += 'white bread, ';
@@ -56,29 +56,29 @@ sandwichSubmit.addEventListener('click', function (event) {
     if (mayo.checked) {
         str += 'mayo,'
     }
-    'and a can of soda.'
+    'and a bev.'
 
     alert(str)
 });
 
 const date = document.querySelector('#date');
 const textInput2 = document.querySelector('#text-input2');
-const longHair = document.querySelector('#long-hair');
-const shortHair = document.querySelector('#short-hair');
+const skinFade = document.querySelector('#skin-fade');
+const taperFade = document.querySelector('#taper-fade');
 const hairSubmit = document.querySelector('#hair-submit');
 
 hairSubmit.addEventListener ('click', function (event) {
     event.preventDefault();
 
     let str2 = 
-    'Haircut scheduled for ' + date.value + 'with ' + textInput2.value 
+    'Your cut is scheduled for ' + date.value + ' with ' + textInput2.value 
 
-    if (longHair.checked) {
-        str2 += 'long hair.'
+    if (skinFade.checked) {
+        str2 += ' Skin Fade.'
     }
 
-    if (shortHair.checked) {
-        str2 += 'short hair.'
+    if (taperFade.checked) {
+        str2 += ' Taper fade.'
     }
 
     alert(str2);
